@@ -1,1 +1,50 @@
-<h1>Hello World </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="myForm">
+      <h1>BMI Calculator pro Max</h1>
+      <div class="gender">
+        <input type="radio" id="male" name="male" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="female" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <p>&nbsp;</p>
+      <div class="slidecontainer">
+        <p class="value">Height: <span id="height"></span></p>
+        <input
+          type="range"
+          min="120"
+          max="220"
+          value="180"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+      <div class="metrics">
+        <div class="labelMetrics">
+          <div>Weight</div>
+          <p class="value" id="weight">90</p>
+          <button class="button" id="weightPlus">+</button>
+          <button class="button" id="weightMinus">-</button>
+        </div>
+        <div class="labelMetrics">
+          <div>Age</div>
+          <p class="value" id="age">18</p>
+          <button class="button" id="agePlus">+</button>
+          <button class="button" id="ageMinus">-</button>
+        </div>
+      </div>
+      <button class="calculate">Calculate</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
